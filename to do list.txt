@@ -1,6 +1,7 @@
 Git.txt : advanced part study
 
-C : basic, advanced study
+C : basic, p.225
+C : advanced study
 C++ : basic study
 Logic : hmmm
 Computer Structure : study

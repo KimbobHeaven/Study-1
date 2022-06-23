@@ -1,0 +1,9 @@
+Git.txt : advanced part study
+
+C : basic, advanced study
+C++ : basic study
+Logic : hmmm
+Computer Structure : study
+Data Structure : study
+
+Ubuntu : terminal study

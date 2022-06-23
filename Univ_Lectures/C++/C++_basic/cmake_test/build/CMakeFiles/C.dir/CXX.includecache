@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/kimbob/Git/Study/Univ_Lectures/C++/C++_basic/cmake_test/add.cpp
+main.h
+/home/kimbob/Git/Study/Univ_Lectures/C++/C++_basic/cmake_test/main.h
+
+/home/kimbob/Git/Study/Univ_Lectures/C++/C++_basic/cmake_test/main.cpp
+iostream
+-
+main.h
+/home/kimbob/Git/Study/Univ_Lectures/C++/C++_basic/cmake_test/main.h
+
+/home/kimbob/Git/Study/Univ_Lectures/C++/C++_basic/cmake_test/main.h
+
+/home/kimbob/Git/Study/Univ_Lectures/C++/C++_basic/cmake_test/sub.cpp
+main.h
+/home/kimbob/Git/Study/Univ_Lectures/C++/C++_basic/cmake_test/main.h
+

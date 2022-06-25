@@ -3,7 +3,9 @@
     "runner": "terminal",
     "type": "shell",
     "echoCommand": true,
-    "presentation" : { "reveal": "always" },
+    "presentation": {
+        "reveal": "always"
+    },
     "tasks": [
         {
             "label": "save and compile for C++",
@@ -73,7 +75,10 @@
                     "message": 5
                 }
             },
-            "group": "build"
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
         },
         {
             "label": "execute",
@@ -97,10 +102,7 @@
             "problemMatcher": [
                 "$gcc"
             ],
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            },
+            "group": "build",
             "detail": "compiler: /usr/bin/g++"
         }
     ]

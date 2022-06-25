@@ -1,6 +1,5 @@
 Git.txt : advanced part study
 
-C : basic, p.225
 C : advanced study
 C++ : basic study
 Logic : hmmm
@@ -8,3 +7,5 @@ Computer Structure : study
 Data Structure : study
 
 Ubuntu : terminal study
+
+Cmake : CMakeList.txt check build exe file name

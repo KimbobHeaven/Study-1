@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/kimbob/Git/Study/Univ_Lectures/C/C_basic/random_extern/main.c
+stdio.h
+-
+
+/home/kimbob/Git/Study/Univ_Lectures/C/C_basic/random_extern/random.c
+

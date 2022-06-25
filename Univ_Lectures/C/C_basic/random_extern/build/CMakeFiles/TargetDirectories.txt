@@ -1,0 +1,3 @@
+/home/kimbob/Git/Study/Univ_Lectures/C/C_basic/random_extern/build/CMakeFiles/rebuild_cache.dir
+/home/kimbob/Git/Study/Univ_Lectures/C/C_basic/random_extern/build/CMakeFiles/edit_cache.dir
+/home/kimbob/Git/Study/Univ_Lectures/C/C_basic/random_extern/build/CMakeFiles/_exeout.dir

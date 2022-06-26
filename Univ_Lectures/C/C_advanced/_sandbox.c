@@ -1,8 +1,10 @@
 #include <stdio.h>
 
 int main() {
-    int* p;
-    p = (int*)p;
+    char ch[100];
+
+    scanf("%s", ch);
+    puts(ch);
 
     return 0;
 }

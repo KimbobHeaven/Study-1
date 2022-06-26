@@ -100,4 +100,135 @@ char str[] = "abc";  // {'a', 'b', 'c', '\0'}로 크기 자동 부여
 
 문자열과 포인터
 char* p = "HelloWorld";  // 포인터 변수가 data segment에 저장, 문자열이 text segment에 저장.
-    문자열을 변경할 순 없지만, text segment에 있는 문자열을 가리키도록 할 순 있음.
+    문자열을 변경할 순 없지만, text segment에 새 문자열을 만들어 가리키도록 할 순 있음.
+    ex) p = "Goodbye";
+
+문자 입출력 라이브러리
+    // stdio.h
+    int scanf("%c", &c)  // 하나의 문자를 읽어서 c에 저장
+    int printf("%c", c)  // c에 저장된 문자 출력
+
+    int getchar(void)  // 하나의 문자를 읽어서 반환. EOF(-1)체크를 위해 int형으로 반환
+    void putchar(int c)  // c에 저장된 문자 출력
+
+    // conio.h : c언어 표준이 아니기에 vs에서만 사용가능?
+    int _getch(void)  // 하나의 문자를 읽어서 반환. 버퍼 사용하지 않음
+    int _getche(void)  // _getch + echo
+    void _putch(int c)  // c에 저장된 문자 출력. 버퍼 사용하지 않음
+
+문자열 입출력 라이브러리
+    // stdio.h
+    int scanf("%s", s)  // &s가 의미가 없음(문자열 = 배열)
+    int printf("%s", s)
+
+    char* gets_s(char* s, int size)  // 구현하지 않은 컴파일러도 존재
+    int puts(const char* s)
+
+문자 처리 라이브러리
+    // ctype.h
+    isalpha(c)
+    ...
+    toupper(c)
+    ...
+
+문자열 처리 라이브러리
+    // string.h
+    strlen(s)  // length
+
+    strcpy(s1, s2)  // s2 copy to s1
+    strcat(s1, s2)  // s2 append to s1
+    strcmp(s1, s2)  // compare s1, s2
+    
+    strncpy(s1, s2, n)  // max n
+    strncat(s1, s2, n)
+    strncmp(s1, s2, n)
+    
+    strchr(s, c)  // search c in s
+    strstr(s1, s2)  // search s2 in s1
+    
+    char* strtok(s, delimit)  // s to token by delimit(분리자)
+        첫번째 토큰에 대한 포인터 반환. 정확한 작동원리 나중에 다시 체크
+
+문자열 수치 변환
+    sscanf(s, "%d", value)  // s를 정수형으로 value에 저장하는 예시
+    sprintf(s, "%d", value)  // 정수형의 value를 s에 저장하는 예시
+
+    int atoi(const char* str)  // string to int
+    double atof(const char* str)  // string to double
+
+
+
+
+13. 구초제
+구조체의 선언
+struct(keyword) tag {
+    struct_member
+};
+
+구조체 변수 선언 및 초기화
+struct student s1 = {24, "Kim", 4.3};  // keyword = student, {age, name, grade}
+
+구조체 멤버 참조
+s1.grade = 3.5;
+
+이름없는 구조체 선언
+struct {
+    int number;
+    char name[10];
+    double grade;
+} s1, s2, s3;
+
+구조체 속 구조체
+struct circle {
+    int radius;
+    struct point p;
+};
+struct circle c1;
+c1.p.x = 3;
+
+구조체 배열
+struct circle list[3];
+
+구조체 포인터
+struct circle c;
+struct circle* p;
+p = &c;
+
+간접 멤버 연산자 : 둘이 같은 표현
+(*p).member
+p->member
+
+함수와 구조체
+Call by Value : 구조체 복사. 멤버 연산자 사용
+Call by Address : 구조체 주소 전달. 간접 멤버 연산자 사용
+Return structure : 구조체 복사 반환
+
+공용체 : 한 공간을 여러개의 자료형으로 해석가능. 가장 큰 메모리용량을 요구하는 만큼의 용량을 가짐
+union example {
+    char c;
+    int i;
+};  // example : 4byte(int)
+union example v;
+v.c = 'A';
+v.i = 1000;  // v 공간을 overwrite
+
+열거형 : 인덱스는 기본적으로 0부터 시작. switch-case문에서 응용가능
+enum days {SUN, MON, TUE, WED, THU, FRI, SAT};  // 정의
+enum days today;
+today = SUN;
+enum days {SUN=7, MON=1, TUE, WED, THU, FRI, SAT}  // 인덱스 임의지정 : TUE부터는 2부터 
+
+자료형 정의
+// typedef origin_datatype new_datatype;
+typedef int INT32;  // 정수
+typedef struct point POINT;  // 구조체
+typedef struct point {
+    ...
+} POINT;  // 구조체 다른 방법
+typedef enum {...} BOOL;  // 열거형
+typedef char* SPTR;  // 포인터
+
+
+
+
+14. 포인터 활용

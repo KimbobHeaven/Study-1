@@ -27,13 +27,11 @@ devkimbob@UbuntuKimbob:~$ sudo apt install ./discord-0.0.18.deb
 ```
 
 ### 2.2.2. Install better discord
-download link : [betterdiscord.com](https://betterdiscord.app/, "https://betterdiscord.app/")
-
+download link : [betterdiscord.com](https://betterdiscord.app/, "https://betterdiscord.app/")\
 plugins : GameActivityToggle
 
 ## 2.3. Mouse scroll speed
-reference_3button : [codechacha.com](https://codechacha.com/ko/linux-imwheel/, "https://codechacha.com/ko/linux-imwheel/")
-
+reference_3button : [codechacha.com](https://codechacha.com/ko/linux-imwheel/, "https://codechacha.com/ko/linux-imwheel/")\
 reference_5button : [velog.io](https://velog.io/@ruby/Ubuntu%EC%97%90%EC%84%9C-imwheel%EB%A1%9C-%EC%8A%A4%ED%81%AC%EB%A1%A4-%EC%86%8D%EB%8F%84-%EC%A1%B0%EC%A0%88, "https://velog.io/@ruby/Ubuntu%EC%97%90%EC%84%9C-imwheel%EB%A1%9C-%EC%8A%A4%ED%81%AC%EB%A1%A4-%EC%86%8D%EB%8F%84-%EC%A1%B0%EC%A0%88")
 ```console
 devkimbob@UbuntuKimbob:~$ sudo apt-get install imwheel

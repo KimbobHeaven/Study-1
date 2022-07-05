@@ -42,8 +42,7 @@ devkimbob@UbuntuKimbob:~$ gedit ~/.imwheelrc
 None, Up, Button4, 2
 None, Down, Button5, 2
 
-devkimbob@UbuntuKimbob:~$ imwheel -k
-#Start on startup
+devkimbob@UbuntuKimbob:~$ imwheel -k  * comment
 devkimbob@UbuntuKimbob:~$ sudo gedit /etc/X11/imwheel/startup.conf
 
 IMWHEEL_START=1

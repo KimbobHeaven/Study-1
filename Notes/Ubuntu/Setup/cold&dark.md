@@ -6,8 +6,8 @@ Fresh Install Setup
 Ubuntu 20.04.4 LTS (Focal Fossa)
 
 ## 1.2. User name, Device name
-User : ---\
-device : ---
+User : ---------\
+Device : ---------
 
 # 2. Basic setup
 ## 2.1. Dual monitor fix
@@ -86,12 +86,53 @@ VSCode
 Region & Language : Input Sources Korean(Hangul)
 
 ## 2.6. Speakers fix
+reference : [jimnong.tistory.com](https://jimnong.tistory.com/1048, "https://jimnong.tistory.com/1048")
+```console
+user_name@Device_Name:~$ sudo gedit /etc/modprobe.d/alsa-base.conf
+
+options snd-hda-intel model=clevo-p950
+
+user_name@Device_Name:~$ sudo alsa force-reload
+```
 
 ## 2.7. Coding
+reference : [linuxize.com](https://linuxize.com/post/how-to-install-gcc-on-ubuntu-20-04/, "https://linuxize.com/post/how-to-install-gcc-on-ubuntu-20-04/")
+```console
+user_name@Device_Name:~$ sudo apt update
+user_name@Device_Name:~$ sudo apt install build-essential
+```
 
 # 3. Additional setup
 ## 3.1. Chrome force dark mode
+reference : [dev.to](https://dev.to/ankitbrijwasi/enable-dark-mode-in-chrome-on-ubuntu-20na, "https://dev.to/ankitbrijwasi/enable-dark-mode-in-chrome-on-ubuntu-20na")
+```console
+user_name@Device_Name:~$ sudo gedit /usr/share/applications/google-chrome.desktop
+
+Exec=/usr/bin/google-chrome-stable %U
+Exec=/usr/bin/google-chrome-stable %U --enable-features=WebUIDarkMode --force-dark-mode
+
+Exec=/usr/bin/google-chrome-stable
+Exec=/usr/bin/google-chrome-stable --enable-features=WebUIDarkMode --force-dark-mode
+
+save, resatrt chrome
+```
+
 ## 3.2. Gnome extension installations
+```console
+user_name@Device_Name:~$ gnome-shell --version
+user_name@Device_Name:~$ sudo apt install gnome-shell-extensions
+
+/home/user_name/.local/share/gnome-shell/extensions/[UUID]/[Extracted]
+or
+user_name@Device_Name:~$ sudo apt install chrome-gnome-shell
+```
+
 ### 3.2.1. Sound device chooser
+download .deb : [extensions.gnome.org](https://extensions.gnome.org/extension/906/sound-output-device-chooser/, "https://extensions.gnome.org/extension/906/sound-output-device-chooser/")
+
 ### 3.2.2. Tiling assist for FancyZones
+reference : [howtogeek.com](https://www.howtogeek.com/786985/linux-alternatives-for-windows-powertoys/, "https://www.howtogeek.com/786985/linux-alternatives-for-windows-powertoys/")\
+download .deb : [extensions.gnome.org](https://extensions.gnome.org/extension/3733/tiling-assistant/, "https://extensions.gnome.org/extension/3733/tiling-assistant/")
+
 ### 3.2.3. Sound percentage
+download .deb : [extensions.gnome.org](https://extensions.gnome.org/extension/2120/sound-percentage/, "https://extensions.gnome.org/extension/2120/sound-percentage/")

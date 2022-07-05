@@ -20,8 +20,7 @@ devkimbob@UbuntuKimbob:~$ sudo ubuntu-drivers autoinstall
 
 ## 2.2. Install discord
 ### 2.2.1. Installation via .deb file
-reference : [linuxhint.com](https://linuxhint.com/install-discord-ubuntu22-04/, "https://linuxhint.com/install-discord-ubuntu22-04/")
-
+reference : [linuxhint.com](https://linuxhint.com/install-discord-ubuntu22-04/, "https://linuxhint.com/install-discord-ubuntu22-04/")\
 discord.deb : [discord.com](https://discord.com/download, "https://discord.com/download")
 ```console
 devkimbob@UbuntuKimbob:~$ sudo apt install ./discord-0.0.18.deb

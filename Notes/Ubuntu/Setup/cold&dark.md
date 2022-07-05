@@ -37,15 +37,15 @@ reference_5button : [velog.io](https://velog.io/@ruby/Ubuntu%EC%97%90%EC%84%9C-i
 devkimbob@UbuntuKimbob:~$ sudo apt-get install imwheel
 devkimbob@UbuntuKimbob:~$ imwheel
 devkimbob@UbuntuKimbob:~$ gedit ~/.imwheelrc
-```
-```gedit
+
 ".*"
 None, Up, Button4, 2
 None, Down, Button5, 2
+
 devkimbob@UbuntuKimbob:~$ imwheel -k
-```
-```console
-//Start on startup
+#Start on startup
 devkimbob@UbuntuKimbob:~$ sudo gedit /etc/X11/imwheel/startup.conf
+
 IMWHEEL_START=1
+
 ```

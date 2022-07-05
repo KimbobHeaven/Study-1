@@ -22,7 +22,7 @@ user_name@Device_Name:~$ sudo mount /dev/sdb1 /media/user_name/Label
 user_name@Device_Name:~$ umount /dev/sdb1
 ```
 
-디스크 포맷
+디스크 포맷\
 FAT32
 ```console
 user_name@Device_Name:~$ sudo mkfs.fat -F 32 -n [Label] -v [Device_dir]
@@ -37,6 +37,7 @@ user_name@Device_Name:~$ sudo mke2fs -t ext4 -L [Label] -v [Device_dir]
 ```
 
 # 2. Backup using tar command
+Single line version
 ```console
 user_name@Device_Name:~$ cd /
 user_name@Device_Name:/$ sudo tar cvpzf /media/user_name/Label/backup_$(date +%y%m%d).tar.gz --exclude=/proc/* --exclude=/lost+found/* --exclude=/media/* --exclude=/mnt/* --exclude=/sys/* /

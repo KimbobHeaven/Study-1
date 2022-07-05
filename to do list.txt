@@ -7,6 +7,10 @@ Computer Structure : study
 Data Structure : study
 
 Ubuntu : terminal study
+    light booting
+    backup and restore
+    vm machine
+    ext4 ntfs
 
 Cmake : CMakeList.txt check build exe file name
 

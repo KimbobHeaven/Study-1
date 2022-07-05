@@ -15,3 +15,5 @@ Ubuntu : terminal study
 Cmake : CMakeList.txt check build exe file name
 
 React : yeah...
+
+.md : study

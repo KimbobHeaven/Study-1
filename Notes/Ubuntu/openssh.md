@@ -167,7 +167,7 @@ user_name@Device_name:~$ sudo vim ~/.ssh/authorized_keys
 
 ## 6.3. Save SSH connection info
 From : Client
-```console
+```json
 ~ $ vim ~/.ssh/config
 
 Host <info_name>

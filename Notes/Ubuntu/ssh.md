@@ -79,5 +79,5 @@ Port <port_number>  # add new line
 #AddressFamily any
 ...
 
-<user_name>@<Device_name>:~$ sudo service sshd restart
+user_name@Device_name:~$ sudo service sshd restart
 ```

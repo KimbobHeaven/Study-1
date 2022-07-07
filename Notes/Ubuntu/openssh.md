@@ -26,10 +26,10 @@ user_name@Device_name:~$ sudo systemctl status ssh
      CGroup: /system.slice/ssh.service
              └─1131 sshd: /usr/sbin/sshd -D [listener] 0 of 10-100 startups
 
-Jul 08 05:54:02 Device_Name systemd[1]: Starting OpenBSD Secure Shell server...
-Jul 08 05:54:02 Device_Name sshd[1131]: Server listening on 0.0.0.0 port <port_number>.
-Jul 08 05:54:02 Device_Name sshd[1131]: Server listening on :: port <port_number>.
-Jul 08 05:54:02 Device_Name systemd[1]: Started OpenBSD Secure Shell server.
+Jul 08 05:54:02 <Device_Name> systemd[1]: Starting OpenBSD Secure Shell server...
+Jul 08 05:54:02 <Device_Name> sshd[1131]: Server listening on 0.0.0.0 port <port_number>.
+Jul 08 05:54:02 <Device_Name> sshd[1131]: Server listening on :: port <port_number>.
+Jul 08 05:54:02 <Device_Name> systemd[1]: Started OpenBSD Secure Shell server.
 ```
 
 If not

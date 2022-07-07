@@ -91,7 +91,6 @@ reference : [codechacha.com](https://codechacha.com/ko/ubuntu-install-openssh/, 
 user_name@Device_name:~$ sudo apt-get install openssh-client
 ```
 
-Check IP address
 2. Check logical name : enp3s0
 ```console
 user_name@Device_name:~$ sudo lshw -c network
@@ -154,7 +153,7 @@ From : Client
 
 ## 6.2. Registrate SSH key
 From : Server
-```conolse
+```console
 user_name@Device_name:~$ mkdir ~/.ssh  # if not exiting
 user_name@Device_name:~$ touch ~/.ssh/authorized_keys
 user_name@Device_name:~$ chmod 755 ~/.ssh/authorized_keys  # RW permission

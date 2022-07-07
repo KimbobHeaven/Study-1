@@ -1,19 +1,43 @@
 Git.txt : advanced part study
 
-C : advanced study
-C++ : basic study
-Logic : hmmm
-Computer Structure : study
-Data Structure : study
+C : 
+    basic study : double pointer?
+    advanced study
 
-Ubuntu : terminal study
+C++ : 
+    basic study
+
+Logic : 
+    hmmm
+
+Computer Structure : 
+    study
+
+Data Structure : 
+    study
+
+Ubuntu : 
+    setup note : done
+    terminal study
     light booting
-    backup and restore
+    backup and restore : done
     vm machine
     ext4 ntfs
+    ssh connections : diff network
+    chrome remote desktop
 
-Cmake : CMakeList.txt check build exe file name
+Cmake : 
+    CMakeList.txt check build exe file name
 
-React : yeah...
+React : 
+    yeah...
 
-.md : study
+.md files : 
+    study : basics done
+
+Others :
+    ip
+    internet connections
+    networks
+    port forwarding
+    SSH tech

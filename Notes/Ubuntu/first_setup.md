@@ -6,16 +6,16 @@ Fresh Install Setup
 Ubuntu 20.04.4 LTS (Focal Fossa)
 
 ## 1.2. User name, Device name
-User : ---------\
-Device : ---------
+User : <user_name>\
+Device : <Device_Name>
 
 # 2. Basic setup
 ## 2.1. Dual monitor fix
 reference : [askubuntu.com](https://askubuntu.com/questions/1230924/ubuntu-20-04-does-not-recognize-second-monitor, "https://askubuntu.com/questions/1230924/ubuntu-20-04-does-not-recognize-second-monitor")
 ```console
-user_name@Device_Name:~$ sudo apt update
-user_name@Device_Name:~$ sudo apt upgrade
-user_name@Device_Name:~$ sudo ubuntu-drivers autoinstall
+<user_name>@<Device_Name>:~$ sudo apt update
+<user_name>@<Device_Name>:~$ sudo apt upgrade
+<user_name>@<Device_Name>:~$ sudo ubuntu-drivers autoinstall
 ```
 
 ## 2.2. Install discord
@@ -23,7 +23,7 @@ user_name@Device_Name:~$ sudo ubuntu-drivers autoinstall
 reference : [linuxhint.com](https://linuxhint.com/install-discord-ubuntu22-04/, "https://linuxhint.com/install-discord-ubuntu22-04/")\
 discord.deb : [discord.com](https://discord.com/download, "https://discord.com/download")
 ```console
-user_name@Device_Name:~$ sudo apt install ./discord-0.0.18.deb
+<user_name>@<Device_Name>:~$ sudo apt install ./discord-0.0.18.deb
 ```
 
 ### 2.2.2. Install better discord
@@ -34,16 +34,16 @@ plugins : GameActivityToggle
 reference_3button : [codechacha.com](https://codechacha.com/ko/linux-imwheel/, "https://codechacha.com/ko/linux-imwheel/")\
 reference_5button : [velog.io](https://velog.io/@ruby/Ubuntu%EC%97%90%EC%84%9C-imwheel%EB%A1%9C-%EC%8A%A4%ED%81%AC%EB%A1%A4-%EC%86%8D%EB%8F%84-%EC%A1%B0%EC%A0%88, "https://velog.io/@ruby/Ubuntu%EC%97%90%EC%84%9C-imwheel%EB%A1%9C-%EC%8A%A4%ED%81%AC%EB%A1%A4-%EC%86%8D%EB%8F%84-%EC%A1%B0%EC%A0%88")
 ```console
-user_name@Device_Name:~$ sudo apt-get install imwheel
-user_name@Device_Name:~$ imwheel
-user_name@Device_Name:~$ gedit ~/.imwheelrc
+<user_name>@<Device_Name>:~$ sudo apt-get install imwheel
+<user_name>@<Device_Name>:~$ imwheel
+<user_name>@<Device_Name>:~$ gedit ~/.imwheelrc
 
 ".*"
 None, Up, Button4, 2
 None, Down, Button5, 2
 
-user_name@Device_Name:~$ imwheel -k
-user_name@Device_Name:~$ sudo gedit /etc/X11/imwheel/startup.conf
+<user_name>@<Device_Name>:~$ imwheel -k
+<user_name>@<Device_Name>:~$ sudo gedit /etc/X11/imwheel/startup.conf
 
 IMWHEEL_START=1
 
@@ -88,25 +88,25 @@ Region & Language : Input Sources Korean(Hangul)
 ## 2.6. Speakers fix
 reference : [jimnong.tistory.com](https://jimnong.tistory.com/1048, "https://jimnong.tistory.com/1048")
 ```console
-user_name@Device_Name:~$ sudo gedit /etc/modprobe.d/alsa-base.conf
+<user_name>@<Device_Name>:~$ sudo gedit /etc/modprobe.d/alsa-base.conf
 
 options snd-hda-intel model=clevo-p950
 
-user_name@Device_Name:~$ sudo alsa force-reload
+<user_name>@<Device_Name>:~$ sudo alsa force-reload
 ```
 
 ## 2.7. Coding
 reference : [linuxize.com](https://linuxize.com/post/how-to-install-gcc-on-ubuntu-20-04/, "https://linuxize.com/post/how-to-install-gcc-on-ubuntu-20-04/")
 ```console
-user_name@Device_Name:~$ sudo apt update
-user_name@Device_Name:~$ sudo apt install build-essential
+<user_name>@<Device_Name>:~$ sudo apt update
+<user_name>@<Device_Name>:~$ sudo apt install build-essential
 ```
 
 # 3. Additional setup
 ## 3.1. Chrome force dark mode
 reference : [dev.to](https://dev.to/ankitbrijwasi/enable-dark-mode-in-chrome-on-ubuntu-20na, "https://dev.to/ankitbrijwasi/enable-dark-mode-in-chrome-on-ubuntu-20na")
 ```console
-user_name@Device_Name:~$ sudo gedit /usr/share/applications/google-chrome.desktop
+<user_name>@<Device_Name>:~$ sudo gedit /usr/share/applications/google-chrome.desktop
 
 Exec=/usr/bin/google-chrome-stable %U
 Exec=/usr/bin/google-chrome-stable %U --enable-features=WebUIDarkMode --force-dark-mode
@@ -119,12 +119,12 @@ save, resatrt chrome
 
 ## 3.2. Gnome extension installations
 ```console
-user_name@Device_Name:~$ gnome-shell --version
-user_name@Device_Name:~$ sudo apt install gnome-shell-extensions
+<user_name>@<Device_Name>:~$ gnome-shell --version
+<user_name>@<Device_Name>:~$ sudo apt install gnome-shell-extensions
 
-/home/user_name/.local/share/gnome-shell/extensions/[UUID]/[Extracted]
+/home/user_name/.local/share/gnome-shell/extensions/<UUID>/<Extracted>
 or
-user_name@Device_Name:~$ sudo apt install chrome-gnome-shell
+<user_name>@<Device_Name>:~$ sudo apt install chrome-gnome-shell
 ```
 
 ### 3.2.1. Sound device chooser

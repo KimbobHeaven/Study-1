@@ -122,7 +122,8 @@ user_name@Device_name:~$ ssh <user_name>@<IP_Address> -p <port_number>
 ```
 
 ## 4.2. Connect when not in the same network
-~~In Progress~~
+~~In Progress~~\
+~~basically portforward, and use personal ip address. more on that later...~~
 
 # 5. Using Termux
 reference : [wiki.termux.com](https://wiki.termux.com/wiki/Main_Page "https://wiki.termux.com/wiki/Main_Page")\

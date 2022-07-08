@@ -48,5 +48,3 @@ Others :
     SQL
     DB
     oracle VM
-
-    test

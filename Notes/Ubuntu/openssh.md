@@ -2,7 +2,7 @@ OpenSSH
 ===
 
 # 1. Open SSH Server
-reference : [codechacha.com](https://codechacha.com/ko/ubuntu-install-openssh/, "https://codechacha.com/ko/ubuntu-install-openssh/")
+reference : [codechacha.com](https://codechacha.com/ko/ubuntu-install-openssh/ "https://codechacha.com/ko/ubuntu-install-openssh/")
 
 ## 1.1. Install OpenSSH
 ```console
@@ -55,7 +55,7 @@ user_name@Device_name:~$ sudo ufw disable
 ```
 
 # 2. Close SSH server
-reference : [codechacha.com](https://codechacha.com/ko/ubuntu-install-openssh/, "https://codechacha.com/ko/ubuntu-install-openssh/")
+reference : [codechacha.com](https://codechacha.com/ko/ubuntu-install-openssh/ "https://codechacha.com/ko/ubuntu-install-openssh/")
 
 To stop SSH
 ```console
@@ -68,7 +68,7 @@ user_name@Device_name:~$ sudo systemctl disable ssh
 ```
 
 # 3. Change port
-reference : [jbhs7014.tistory.com](https://jbhs7014.tistory.com/141, "https://jbhs7014.tistory.com/141")
+reference : [jbhs7014.tistory.com](https://jbhs7014.tistory.com/141 "https://jbhs7014.tistory.com/141")
 
 ```console
 user_name@Device_name:~$ sudo vim /etc/ssh/sshd_config
@@ -83,7 +83,7 @@ user_name@Device_name:~$ sudo service sshd restart
 ```
 
 # 4. Connect to SSH
-reference : [codechacha.com](https://codechacha.com/ko/ubuntu-install-openssh/, "https://codechacha.com/ko/ubuntu-install-openssh/")
+reference : [codechacha.com](https://codechacha.com/ko/ubuntu-install-openssh/ "https://codechacha.com/ko/ubuntu-install-openssh/")
 
 ## 4.1. Connect when in a same network
 1. Install OpenSSH client
@@ -125,9 +125,9 @@ user_name@Device_name:~$ ssh <user_name>@<IP_Address> -p <port_number>
 ~~In Progress~~
 
 # 5. Using Termux
-reference : [wiki.termux.com](https://wiki.termux.com/wiki/Main_Page, "https://wiki.termux.com/wiki/Main_Page")\
-reference(outdated) : [blog.bsmind.co.kr](https://blog.bsmind.co.kr/2180, "https://blog.bsmind.co.kr/2180")\
-download link : [f-droid.org](https://f-droid.org/en/packages/com.termux/, "https://f-droid.org/en/packages/com.termux/")
+reference : [wiki.termux.com](https://wiki.termux.com/wiki/Main_Page "https://wiki.termux.com/wiki/Main_Page")\
+reference(outdated) : [blog.bsmind.co.kr](https://blog.bsmind.co.kr/2180 "https://blog.bsmind.co.kr/2180")\
+download link : [f-droid.org](https://f-droid.org/en/packages/com.termux/ "https://f-droid.org/en/packages/com.termux/")
 
 ```console
 ~ $ pkg update
@@ -138,7 +138,7 @@ download link : [f-droid.org](https://f-droid.org/en/packages/com.termux/, "http
 ```
 
 # 6. Using SSH Keys
-reference : [shanepark.tistory.com](https://shanepark.tistory.com/195, "https://shanepark.tistory.com/195")
+reference : [shanepark.tistory.com](https://shanepark.tistory.com/195 "https://shanepark.tistory.com/195")
 
 ## 6.1. Generate SSH key
 From : Client

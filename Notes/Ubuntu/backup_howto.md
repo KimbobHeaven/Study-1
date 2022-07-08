@@ -1,4 +1,4 @@
-reference : [wnw1005.tistory.com](https://wnw1005.tistory.com/425, "https://wnw1005.tistory.com/425")
+reference : [wnw1005.tistory.com](https://wnw1005.tistory.com/425 "https://wnw1005.tistory.com/425")
 
 # 1. Pre setting
 현재 사용중이거나 마운트되어있는 파일 시스템 확인

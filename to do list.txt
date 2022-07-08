@@ -1,24 +1,28 @@
 Git.txt : advanced part study
 
-C : 
-    basic study : double pointer?
-    advanced study
+Univ :
+    C : 
+        basic : double pointer?
+        advanced
 
-C++ : 
-    basic study
+    C++ : 
+        basic study
 
-Logic : 
-    hmmm
+    Logic : 
+        hmmm
 
-Computer Structure : 
-    study
+    Computer Structure : 
+        study
 
-Data Structure : 
-    study
+    Data Structure : 
+        study
+
+Linux :
+    terminal
+    vi
 
 Ubuntu : 
     setup note : done
-    terminal study
     light booting
     backup and restore : done
     vm machine
@@ -32,8 +36,8 @@ Cmake :
 React : 
     yeah...
 
-.md files : 
-    study : basics done
+Markdown files : 
+    basics : done
 
 Others :
     ip
@@ -41,3 +45,6 @@ Others :
     networks
     port forwarding
     SSH tech
+    SQL
+    DB
+    oracle VM

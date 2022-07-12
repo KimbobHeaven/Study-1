@@ -27,7 +27,7 @@ install zsh
 reference_zsh : [github.com](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH#install-and-set-up-zsh-as-default "https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH#install-and-set-up-zsh-as-default")  
 reference_$SHELL : [askubuntu.com](https://askubuntu.com/questions/131823/how-to-make-zsh-the-default-shell "https://askubuntu.com/questions/131823/how-to-make-zsh-the-default-shell")  
 ```
-@$ sudo apt install zsh
+u@d:~$ sudo apt install zsh
 u@d:~$ sudo vi /etc/passwd
 
 ...

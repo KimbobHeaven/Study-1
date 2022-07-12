@@ -28,7 +28,7 @@ reference_zsh : [github.com](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-
 reference_$SHELL : [askubuntu.com](https://askubuntu.com/questions/131823/how-to-make-zsh-the-default-shell "https://askubuntu.com/questions/131823/how-to-make-zsh-the-default-shell")  
 ```
 @$ sudo apt install zsh
-@:~$ sudo vi /etc/passwd
+u@d:~$ sudo vi /etc/passwd
 
 ...
 <username>:x: ... :/home/<username>:/usr/bin/bash  # change to

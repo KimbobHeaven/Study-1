@@ -8,3 +8,10 @@ OCI Instance : Ubuntu AMD 제작 및 테스팅 :
 OCI Instance ARM 티케팅 스크립트 :
     하루이틀에 끝날 수준이 아님을 알게 됨
     AMD Instance를 따로 하나 만들어서 스크립트를 돌리도록 제작
+
+UAMD (Ubuntu AMD instance) : 
+    nvim coding을 위한 세팅 설정 :
+        zsh + oh my zsh
+        nvim install
+        plugins install :
+            ...

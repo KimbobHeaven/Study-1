@@ -105,7 +105,8 @@ $ sudo apt install python3-dev python3-pip python3-setuptools
 $ pip3 install thefuck --user
 $ vim .zshrc
 
-eval $(thefuck --alias)  " add new line
+export PATH="$HOME/.local/bin:$PATH"
+eval $(thefuck --alias)  " add new lines
 ```
 
 # 3. NeoVIM

@@ -121,6 +121,7 @@ Ctrl + o<command> :
 Esc :
     exit insert mode
 ```
+
 ## 1.4. Editing
 
 ## 1.5. Visual mode - marking
@@ -136,3 +137,14 @@ Esc :
 ## 1.15. Tabs
 ## 1.16. Working with multiple files
 ## 1.17. Diff
+
+# 2. FreeCodeCamp.org - youtube
+reference : [youtube.com](https://www.youtube.com/watch?v=RZ4p-saaQkc&ab_channel=freeCodeCamp.org "https://www.youtube.com/watch?v=RZ4p-saaQkc&ab_channel=freeCodeCamp.org")
+```
+
+```
+
+# 3. Conclusion
+```
+hjkl
+```

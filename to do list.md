@@ -30,7 +30,7 @@ study
 # Linux
 terminal  
 
-## Vim
+## Vim bindings
 [doc](https://vim.rtorr.com/) : postpone  
 [youtube](https://www.youtube.com/watch?v=RZ4p-saaQkc&ab_channel=freeCodeCamp.org) : ing  
 

@@ -1,3 +1,6 @@
 vim commands :
     vim surround
-    
+    commentary
+    nerdtree
+    airline
+    awesome colorscheme

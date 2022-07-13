@@ -13,6 +13,11 @@ ys<target><surround> : y? surround <target> <surround>
     add <surround>
     <target> can be "s" for entire line
     <target> can be "iw" as In-a-Word
+    <surround> can be "b" for bracket ()
+
+<surround> : open/close brackets
+    open : surround with space
+    close : surround without space
 
 --visual line--
 S<surround> : Surround <surround>

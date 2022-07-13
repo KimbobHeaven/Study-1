@@ -29,7 +29,11 @@ study
 
 # Linux
 terminal  
-vi
+
+## Vim
+[doc](https://vim.rtorr.com/) : postpone  
+[youtube](https://www.youtube.com/watch?v=RZ4p-saaQkc&ab_channel=freeCodeCamp.org) : ing  
+
 
 # Ubuntu
 ~~setup note~~   

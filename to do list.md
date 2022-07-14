@@ -64,3 +64,4 @@ DB
 oracle VM
 
 testing git push
+testing git push with ssh

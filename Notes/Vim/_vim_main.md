@@ -23,7 +23,7 @@ h j k l :
 gj gk : goto j/k
     Down, Up(multi-line text)
 
-H M L : High, Middle, Low
+H M L : High, Middle, Low (home, middle, last)
     move to top/middle/bottom of the screen
 
 w W : word
@@ -71,7 +71,7 @@ t<ch> T<ch> : to <ch>
 
 } : 
     jump to next paragraph (or function/block, when editing code)
-{} : 
+{ : 
     jump to previous paragraph (or function/block, when editing code)
 
 zz : 
@@ -84,9 +84,9 @@ Ctrl + f : forwafd
     move forward one full screen
 Ctrl + b : backward
     move back one full screen
-Ctrl + d : 
+Ctrl + d : down
     move forward half screen
-Ctrl + u : 
+Ctrl + u : up
     move backward half screen
 ```
 
@@ -146,5 +146,23 @@ reference : [youtube.com](https://www.youtube.com/watch?v=RZ4p-saaQkc&ab_channel
 
 # 3. Conclusion
 ```
-hjkl
+h j k l
+gj gk
+
+w b e ge
+W B E gE
+
+%
+
+0 $ ^ g_
+
+[num]gg [num]G
+
+f F
+
+{ }
+
+Ctrl + e y f d b u
+
+ci<>
 ```

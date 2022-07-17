@@ -62,6 +62,4 @@ SSH tech
 SQL  
 DB  
 oracle VM
-
-testing git push
-testing git push with ssh
+character sets / encodings

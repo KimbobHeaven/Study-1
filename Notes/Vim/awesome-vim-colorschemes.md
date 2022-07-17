@@ -2,6 +2,8 @@ Awesome vim colorschemes
 ===
 reference : [github.com](https://github.com/rafi/awesome-vim-colorschemes "https://github.com/rafi/awesome-vim-colorschemes")  
 reference_advanced : [wimawesome.com](https://vimawesome.com/plugin/vim-colorschemes-sweeter-than-fiction "https://vimawesome.com/plugin/vim-colorschemes-sweeter-than-fiction")  
+reference_colors : [vimcolorschemes.com](https://vimcolorschemes.com/rafi/awesome-vim-colorschemes "https://vimcolorschemes.com/rafi/awesome-vim-colorschemes")  
+
 run preview.sh
 ```
 cd ~/.local/share/nvim/

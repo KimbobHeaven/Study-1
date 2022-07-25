@@ -232,3 +232,55 @@ typedef char* SPTR;  // 포인터
 
 
 14. 포인터 활용
+이중 포인터 : 또 다른 포인터의 주소를 값으로 가지는 포인터
+
+이중 포인터 선언
+int i = 100;
+int* p = &i;
+int** q = &p;
+
+이중 포인터는 포인터를 함수 안에서 변경하려고 할 떄 매개변수를 이중 포인터로 정의하여 구현한다
+void text(char** q) {
+	*q = "changed text";
+}
+int main() {
+	char* p = "original text";
+	text(&p);
+}
+
+포인터 배열 vs 배열 포인터
+an array of pointers vs a pointer to an array
+int arr[5] = {1, 2, 3, 4, 5};
+int a = 1, b = 2, c = 3, d = 4, e = 5;
+
+int* ap[5] = {&a, &b, &c, &d, &e};  // array of pointers, 말그대로
+
+int (*pa)[5];  // pa는 arr의 주소값을 값으로 가지게 됨. *pa = arr, **pa = 1
+pa = &arr;
+
+함수 포인터 : 함수를 가리키는 포인터
+int add(int, int);
+
+int (*pf)(int, int);  // 함수 포인터 선언
+pf = add;
+
+int (*pfa[4])(int, int) = {add, sub, mul, div};  // 함수 포인터의 배열 선언
+
+result = (*pf)(10, 20);
+result = pfa(10, 20);  // 대부분의 컴파일러에서 pr(10, 20);과 같이 쓰는 것을 허용하기도 함
+
+다차원 배열
+int Row = 2, Col = 3;
+int m[Row][Col];  // (m[Row])[Col]
+
+	   -> Col
+|	  m[0][0] m[0][1] m[0][2]
+v Row m[1][0] m[1][1] m[1][2]
+
+다차원 배열은 메모리 상에서는 사실상 긴 1차원 배열임을 기억하자
+
+메인함수의 인수 : exe파일에 대한 인수? (ex: $ main arg1 arg2 => argv[0] = main.exe's location, argv[1] = arg1, argv[2] = arg2)
+// argc : 인수의 개수, argv : 인수들의 문자열
+int main(int argc, char* argv[]) {}
+
+

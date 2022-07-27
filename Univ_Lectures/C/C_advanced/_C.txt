@@ -284,3 +284,23 @@ v Row m[1][0] m[1][1] m[1][2]
 int main(int argc, char* argv[]) {}
 
 
+
+
+15. 스트림과 파일 입출력
+16. 전처리 및 다중 소스 파일
+
+
+
+
+17. 동적 메모리
+동적 메모리 할당,사용 및 반납
+int* p;  // = NULL;
+p = (int*)malloc(100*sizeof(int));  // (자료형)"memory allocation"(개수*크기)
+*(p + 99) = 100;  // 사용 예시
+free(p);  // 공간 반납
+
+(int*)malloc(n*sizeof(int));
+(int*)calloc(n, sizeof(int));  // 0으로 초기화된 메모리 할당
+realloc(p, n*sizeof(int));  // p의 크기 변경
+
+연결 리스트 : 자료구조론에서 계속

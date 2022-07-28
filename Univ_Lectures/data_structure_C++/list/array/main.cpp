@@ -6,4 +6,5 @@ using namespace std;
 int main() {
     listArray a;
     a.test();
+    a.test();
 }

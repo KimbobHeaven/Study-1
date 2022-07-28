@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/ubuntu/documents/github/Study/Univ_Lectures/data_structure_C++/list/linked_list/listL.h
+
+/home/ubuntu/documents/github/Study/Univ_Lectures/data_structure_C++/list/linked_list/main.cpp
+iostream
+-
+listL.h
+/home/ubuntu/documents/github/Study/Univ_Lectures/data_structure_C++/list/linked_list/listL.h
+

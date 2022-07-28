@@ -1,10 +1,14 @@
-const int MAX = 100;
+typedef struct nodeRecord {
+    int Data;
+    struct nodeRecord* Next;
+} node;
+typedef node* Nptr;
 
-class listArray {
+class listList {
    public:
-    listArray();
-    listArray(const listArray& L);
-    ~listArray();
+    listList();
+    listList(const listList& L);
+    ~listList();
 
     void Insert(int Position, int Item);
     void Delete(int Position);
@@ -15,5 +19,5 @@ class listArray {
 
    private:
     int Count;
-    int Data[MAX];
+    Nptr Head;
 };

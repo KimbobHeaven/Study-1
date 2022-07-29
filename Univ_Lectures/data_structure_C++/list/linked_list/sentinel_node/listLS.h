@@ -20,4 +20,5 @@ class listList {
    private:
     int Count;
     Nptr Head;
+    node Sentinel;
 };

@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/ubuntu/documents/github/Study/Univ_Lectures/data_structure_C++/list/linked_list/sentinel_node/listLS.cpp
+listLS.h
+/home/ubuntu/documents/github/Study/Univ_Lectures/data_structure_C++/list/linked_list/sentinel_node/listLS.h
+iostream
+-
+
+/home/ubuntu/documents/github/Study/Univ_Lectures/data_structure_C++/list/linked_list/sentinel_node/listLS.h
+

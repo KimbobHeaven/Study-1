@@ -61,4 +61,5 @@ void listArray::Print() {
     cout << "Count : " << Count << '\n';
     for (int i = 0; i < Count; i++)
         cout << "Pos." << i << " : " << Data[i] << '\n';
+    cout << '\n';
 }

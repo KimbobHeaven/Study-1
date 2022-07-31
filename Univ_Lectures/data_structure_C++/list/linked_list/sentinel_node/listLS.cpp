@@ -103,4 +103,5 @@ void listList::Print() {
         temp = temp->Next;
         cout << "Pos." << i << " : " << temp->Data << '\n';
     }
+    cout << '\n';
 }

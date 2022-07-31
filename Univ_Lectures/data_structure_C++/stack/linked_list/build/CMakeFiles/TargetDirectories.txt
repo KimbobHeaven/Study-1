@@ -1,0 +1,3 @@
+/home/ubuntu/documents/github/Study/Univ_Lectures/data_structure_C++/stack/linked_list/build/CMakeFiles/rebuild_cache.dir
+/home/ubuntu/documents/github/Study/Univ_Lectures/data_structure_C++/stack/linked_list/build/CMakeFiles/edit_cache.dir
+/home/ubuntu/documents/github/Study/Univ_Lectures/data_structure_C++/stack/linked_list/build/CMakeFiles/_build_exe.dir

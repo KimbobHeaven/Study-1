@@ -7,7 +7,8 @@ class stackArray {
     ~stackArray();
 
     void AddLast(int Item);
-    void RemoveLast(int Item);
+    void RemoveLast();
+    void RetrieveLast(int& Item);
     bool IsEmpty();
     int Length();
     void Print();

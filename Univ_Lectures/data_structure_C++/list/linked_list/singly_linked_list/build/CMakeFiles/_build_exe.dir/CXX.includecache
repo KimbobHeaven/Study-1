@@ -6,11 +6,17 @@
 
 #IncludeRegexTransform: 
 
-/home/ubuntu/documents/github/Study/Univ_Lectures/data_structure_C++/list/linked_list/listL.cpp
+/home/ubuntu/documents/github/Study/Univ_Lectures/data_structure_C++/list/linked_list/singly_linked_list/listL.cpp
 listL.h
-/home/ubuntu/documents/github/Study/Univ_Lectures/data_structure_C++/list/linked_list/listL.h
+/home/ubuntu/documents/github/Study/Univ_Lectures/data_structure_C++/list/linked_list/singly_linked_list/listL.h
 iostream
 -
 
-/home/ubuntu/documents/github/Study/Univ_Lectures/data_structure_C++/list/linked_list/listL.h
+/home/ubuntu/documents/github/Study/Univ_Lectures/data_structure_C++/list/linked_list/singly_linked_list/listL.h
+
+/home/ubuntu/documents/github/Study/Univ_Lectures/data_structure_C++/list/linked_list/singly_linked_list/main.cpp
+iostream
+-
+listL.h
+/home/ubuntu/documents/github/Study/Univ_Lectures/data_structure_C++/list/linked_list/singly_linked_list/listL.h
 

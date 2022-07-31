@@ -8,5 +8,8 @@ int main() {
     a.Print();
     a.AddLast(20);
     a.Print();
-    
+    a.AddLast(30);
+    a.Print();
+    a.RemoveLast();
+    a.Print();
 }

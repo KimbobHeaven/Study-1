@@ -7,7 +7,9 @@ stackArray::stackArray() {
 }
 
 stackArray::stackArray(const stackArray& S) {
-
+    this->Count = S.Count;
+    for (int i = 0; i < S.Count; i++)
+        this->Data[i] = S.Data[i];
 }
 
 stackArray::~stackArray() {}
@@ -21,11 +23,15 @@ void stackArray::AddLast(int Item) {
     }
 }
 
-void stackArray::RemoveLast(int Item) {
+void stackArray::RemoveLast() {
     if (Count == 0)
         cout << "Array Empty\n";
     else
         Count--;
+}
+
+void stackArray::RetrieveLast(int& Item) {
+    Item = Data[Count - 1];
 }
 
 bool stackArray::IsEmpty() {
@@ -40,4 +46,5 @@ void stackArray::Print() {
     cout << "Count : " << Count << '\n';
     for (int i = 0; i < Count; i++)
         cout << "Pos." << i << " : " << Data[i] << '\n';
+    cout << '\n';
 }

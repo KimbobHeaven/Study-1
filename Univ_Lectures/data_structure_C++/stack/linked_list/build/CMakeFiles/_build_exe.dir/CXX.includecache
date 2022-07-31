@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/ubuntu/documents/github/Study/Univ_Lectures/data_structure_C++/stack/linked_list/stackA.cpp
+stackA.h
+/home/ubuntu/documents/github/Study/Univ_Lectures/data_structure_C++/stack/linked_list/stackA.h
+iostream
+-
+
+/home/ubuntu/documents/github/Study/Univ_Lectures/data_structure_C++/stack/linked_list/stackA.h
+

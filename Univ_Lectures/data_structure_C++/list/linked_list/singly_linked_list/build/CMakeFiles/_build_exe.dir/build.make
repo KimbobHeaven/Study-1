@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ubuntu/documents/github/Study/Univ_Lectures/data_structure_C++/list/linked_list
+CMAKE_SOURCE_DIR = /home/ubuntu/documents/github/Study/Univ_Lectures/data_structure_C++/list/linked_list/singly_linked_list
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ubuntu/documents/github/Study/Univ_Lectures/data_structure_C++/list/linked_list/build
+CMAKE_BINARY_DIR = /home/ubuntu/documents/github/Study/Univ_Lectures/data_structure_C++/list/linked_list/singly_linked_list/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/_build_exe.dir/depend.make
@@ -59,29 +59,29 @@ include CMakeFiles/_build_exe.dir/flags.make
 
 CMakeFiles/_build_exe.dir/listL.cpp.o: CMakeFiles/_build_exe.dir/flags.make
 CMakeFiles/_build_exe.dir/listL.cpp.o: ../listL.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/documents/github/Study/Univ_Lectures/data_structure_C++/list/linked_list/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/_build_exe.dir/listL.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/_build_exe.dir/listL.cpp.o -c /home/ubuntu/documents/github/Study/Univ_Lectures/data_structure_C++/list/linked_list/listL.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/documents/github/Study/Univ_Lectures/data_structure_C++/list/linked_list/singly_linked_list/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/_build_exe.dir/listL.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/_build_exe.dir/listL.cpp.o -c /home/ubuntu/documents/github/Study/Univ_Lectures/data_structure_C++/list/linked_list/singly_linked_list/listL.cpp
 
 CMakeFiles/_build_exe.dir/listL.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_build_exe.dir/listL.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/documents/github/Study/Univ_Lectures/data_structure_C++/list/linked_list/listL.cpp > CMakeFiles/_build_exe.dir/listL.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/documents/github/Study/Univ_Lectures/data_structure_C++/list/linked_list/singly_linked_list/listL.cpp > CMakeFiles/_build_exe.dir/listL.cpp.i
 
 CMakeFiles/_build_exe.dir/listL.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_build_exe.dir/listL.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/documents/github/Study/Univ_Lectures/data_structure_C++/list/linked_list/listL.cpp -o CMakeFiles/_build_exe.dir/listL.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/documents/github/Study/Univ_Lectures/data_structure_C++/list/linked_list/singly_linked_list/listL.cpp -o CMakeFiles/_build_exe.dir/listL.cpp.s
 
 CMakeFiles/_build_exe.dir/main.cpp.o: CMakeFiles/_build_exe.dir/flags.make
 CMakeFiles/_build_exe.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/documents/github/Study/Univ_Lectures/data_structure_C++/list/linked_list/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/_build_exe.dir/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/_build_exe.dir/main.cpp.o -c /home/ubuntu/documents/github/Study/Univ_Lectures/data_structure_C++/list/linked_list/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/documents/github/Study/Univ_Lectures/data_structure_C++/list/linked_list/singly_linked_list/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/_build_exe.dir/main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/_build_exe.dir/main.cpp.o -c /home/ubuntu/documents/github/Study/Univ_Lectures/data_structure_C++/list/linked_list/singly_linked_list/main.cpp
 
 CMakeFiles/_build_exe.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_build_exe.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/documents/github/Study/Univ_Lectures/data_structure_C++/list/linked_list/main.cpp > CMakeFiles/_build_exe.dir/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/documents/github/Study/Univ_Lectures/data_structure_C++/list/linked_list/singly_linked_list/main.cpp > CMakeFiles/_build_exe.dir/main.cpp.i
 
 CMakeFiles/_build_exe.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_build_exe.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/documents/github/Study/Univ_Lectures/data_structure_C++/list/linked_list/main.cpp -o CMakeFiles/_build_exe.dir/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/documents/github/Study/Univ_Lectures/data_structure_C++/list/linked_list/singly_linked_list/main.cpp -o CMakeFiles/_build_exe.dir/main.cpp.s
 
 # Object files for target _build_exe
 _build_exe_OBJECTS = \
@@ -95,7 +95,7 @@ _build_exe: CMakeFiles/_build_exe.dir/listL.cpp.o
 _build_exe: CMakeFiles/_build_exe.dir/main.cpp.o
 _build_exe: CMakeFiles/_build_exe.dir/build.make
 _build_exe: CMakeFiles/_build_exe.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ubuntu/documents/github/Study/Univ_Lectures/data_structure_C++/list/linked_list/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable _build_exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ubuntu/documents/github/Study/Univ_Lectures/data_structure_C++/list/linked_list/singly_linked_list/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable _build_exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/_build_exe.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -108,6 +108,6 @@ CMakeFiles/_build_exe.dir/clean:
 .PHONY : CMakeFiles/_build_exe.dir/clean
 
 CMakeFiles/_build_exe.dir/depend:
-	cd /home/ubuntu/documents/github/Study/Univ_Lectures/data_structure_C++/list/linked_list/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/documents/github/Study/Univ_Lectures/data_structure_C++/list/linked_list /home/ubuntu/documents/github/Study/Univ_Lectures/data_structure_C++/list/linked_list /home/ubuntu/documents/github/Study/Univ_Lectures/data_structure_C++/list/linked_list/build /home/ubuntu/documents/github/Study/Univ_Lectures/data_structure_C++/list/linked_list/build /home/ubuntu/documents/github/Study/Univ_Lectures/data_structure_C++/list/linked_list/build/CMakeFiles/_build_exe.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ubuntu/documents/github/Study/Univ_Lectures/data_structure_C++/list/linked_list/singly_linked_list/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/documents/github/Study/Univ_Lectures/data_structure_C++/list/linked_list/singly_linked_list /home/ubuntu/documents/github/Study/Univ_Lectures/data_structure_C++/list/linked_list/singly_linked_list /home/ubuntu/documents/github/Study/Univ_Lectures/data_structure_C++/list/linked_list/singly_linked_list/build /home/ubuntu/documents/github/Study/Univ_Lectures/data_structure_C++/list/linked_list/singly_linked_list/build /home/ubuntu/documents/github/Study/Univ_Lectures/data_structure_C++/list/linked_list/singly_linked_list/build/CMakeFiles/_build_exe.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/_build_exe.dir/depend
 

@@ -5,7 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/ubuntu/documents/github/Study/Univ_Lectures/data_structure_C++/stack/linked_list/main.cpp" "/home/ubuntu/documents/github/Study/Univ_Lectures/data_structure_C++/stack/linked_list/build/CMakeFiles/_build_exe.dir/main.cpp.o"
-  "/home/ubuntu/documents/github/Study/Univ_Lectures/data_structure_C++/stack/linked_list/stackA.cpp" "/home/ubuntu/documents/github/Study/Univ_Lectures/data_structure_C++/stack/linked_list/build/CMakeFiles/_build_exe.dir/stackA.cpp.o"
+  "/home/ubuntu/documents/github/Study/Univ_Lectures/data_structure_C++/stack/linked_list/stackL.cpp" "/home/ubuntu/documents/github/Study/Univ_Lectures/data_structure_C++/stack/linked_list/build/CMakeFiles/_build_exe.dir/stackL.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

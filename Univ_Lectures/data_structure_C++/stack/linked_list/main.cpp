@@ -11,5 +11,11 @@ int main() {
     a.AddLast(30);
     a.Print();
     a.RemoveLast();
+    // a.RemoveLast();
+    cout << "A\n";
     a.Print();
+
+    stackList b(a);
+    cout << "B\n";
+    b.Print();
 }

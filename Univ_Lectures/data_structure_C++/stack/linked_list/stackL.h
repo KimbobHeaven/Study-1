@@ -19,5 +19,5 @@ class stackList {
 
     private:
     int Count;
-    Nptr Head;
+    Nptr Head; 
 };

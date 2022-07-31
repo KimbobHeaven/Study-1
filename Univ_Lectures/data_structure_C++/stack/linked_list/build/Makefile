@@ -150,32 +150,32 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/_build_exe.dir/build.make CMakeFiles/_build_exe.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-stackA.o: stackA.cpp.o
+stackL.o: stackL.cpp.o
 
-.PHONY : stackA.o
+.PHONY : stackL.o
 
 # target to build an object file
-stackA.cpp.o:
-	$(MAKE) -f CMakeFiles/_build_exe.dir/build.make CMakeFiles/_build_exe.dir/stackA.cpp.o
-.PHONY : stackA.cpp.o
+stackL.cpp.o:
+	$(MAKE) -f CMakeFiles/_build_exe.dir/build.make CMakeFiles/_build_exe.dir/stackL.cpp.o
+.PHONY : stackL.cpp.o
 
-stackA.i: stackA.cpp.i
+stackL.i: stackL.cpp.i
 
-.PHONY : stackA.i
+.PHONY : stackL.i
 
 # target to preprocess a source file
-stackA.cpp.i:
-	$(MAKE) -f CMakeFiles/_build_exe.dir/build.make CMakeFiles/_build_exe.dir/stackA.cpp.i
-.PHONY : stackA.cpp.i
+stackL.cpp.i:
+	$(MAKE) -f CMakeFiles/_build_exe.dir/build.make CMakeFiles/_build_exe.dir/stackL.cpp.i
+.PHONY : stackL.cpp.i
 
-stackA.s: stackA.cpp.s
+stackL.s: stackL.cpp.s
 
-.PHONY : stackA.s
+.PHONY : stackL.s
 
 # target to generate assembly for a file
-stackA.cpp.s:
-	$(MAKE) -f CMakeFiles/_build_exe.dir/build.make CMakeFiles/_build_exe.dir/stackA.cpp.s
-.PHONY : stackA.cpp.s
+stackL.cpp.s:
+	$(MAKE) -f CMakeFiles/_build_exe.dir/build.make CMakeFiles/_build_exe.dir/stackL.cpp.s
+.PHONY : stackL.cpp.s
 
 # Help Target
 help:
@@ -189,9 +189,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... stackA.o"
-	@echo "... stackA.i"
-	@echo "... stackA.s"
+	@echo "... stackL.o"
+	@echo "... stackL.i"
+	@echo "... stackL.s"
 .PHONY : help
 
 

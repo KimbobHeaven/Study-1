@@ -70,29 +70,29 @@ CMakeFiles/_build_exe.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_build_exe.dir/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/documents/github/Study/Univ_Lectures/data_structure_C++/stack/linked_list/main.cpp -o CMakeFiles/_build_exe.dir/main.cpp.s
 
-CMakeFiles/_build_exe.dir/stackA.cpp.o: CMakeFiles/_build_exe.dir/flags.make
-CMakeFiles/_build_exe.dir/stackA.cpp.o: ../stackA.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/documents/github/Study/Univ_Lectures/data_structure_C++/stack/linked_list/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/_build_exe.dir/stackA.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/_build_exe.dir/stackA.cpp.o -c /home/ubuntu/documents/github/Study/Univ_Lectures/data_structure_C++/stack/linked_list/stackA.cpp
+CMakeFiles/_build_exe.dir/stackL.cpp.o: CMakeFiles/_build_exe.dir/flags.make
+CMakeFiles/_build_exe.dir/stackL.cpp.o: ../stackL.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/documents/github/Study/Univ_Lectures/data_structure_C++/stack/linked_list/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/_build_exe.dir/stackL.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/_build_exe.dir/stackL.cpp.o -c /home/ubuntu/documents/github/Study/Univ_Lectures/data_structure_C++/stack/linked_list/stackL.cpp
 
-CMakeFiles/_build_exe.dir/stackA.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_build_exe.dir/stackA.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/documents/github/Study/Univ_Lectures/data_structure_C++/stack/linked_list/stackA.cpp > CMakeFiles/_build_exe.dir/stackA.cpp.i
+CMakeFiles/_build_exe.dir/stackL.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/_build_exe.dir/stackL.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/documents/github/Study/Univ_Lectures/data_structure_C++/stack/linked_list/stackL.cpp > CMakeFiles/_build_exe.dir/stackL.cpp.i
 
-CMakeFiles/_build_exe.dir/stackA.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_build_exe.dir/stackA.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/documents/github/Study/Univ_Lectures/data_structure_C++/stack/linked_list/stackA.cpp -o CMakeFiles/_build_exe.dir/stackA.cpp.s
+CMakeFiles/_build_exe.dir/stackL.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/_build_exe.dir/stackL.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/documents/github/Study/Univ_Lectures/data_structure_C++/stack/linked_list/stackL.cpp -o CMakeFiles/_build_exe.dir/stackL.cpp.s
 
 # Object files for target _build_exe
 _build_exe_OBJECTS = \
 "CMakeFiles/_build_exe.dir/main.cpp.o" \
-"CMakeFiles/_build_exe.dir/stackA.cpp.o"
+"CMakeFiles/_build_exe.dir/stackL.cpp.o"
 
 # External object files for target _build_exe
 _build_exe_EXTERNAL_OBJECTS =
 
 _build_exe: CMakeFiles/_build_exe.dir/main.cpp.o
-_build_exe: CMakeFiles/_build_exe.dir/stackA.cpp.o
+_build_exe: CMakeFiles/_build_exe.dir/stackL.cpp.o
 _build_exe: CMakeFiles/_build_exe.dir/build.make
 _build_exe: CMakeFiles/_build_exe.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ubuntu/documents/github/Study/Univ_Lectures/data_structure_C++/stack/linked_list/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable _build_exe"

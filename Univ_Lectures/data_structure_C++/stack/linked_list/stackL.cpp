@@ -9,11 +9,37 @@ stackList::stackList() {
 
 stackList::stackList(const stackList& S) {
     this->Count = S.Count;
-    
+
+    Nptr temp2 = S.Head;
+    if (Count != 0) {
+        Nptr p = new node;
+        p->Data = temp2->Data;
+        p->Next = NULL;
+        this->Head = p;
+
+        Nptr temp1 = this->Head;
+        temp2 = temp2->Next;
+        
+        while (temp2 != NULL) {
+            Nptr p = new node;
+            p->Data = temp2->Data;
+            p->Next = NULL;
+            temp1->Next = p;
+
+            temp1 = temp1->Next;
+            temp2 = temp2->Next;
+        }
+    }
 }
 
 stackList::~stackList() {
-
+    Nptr tempF, tempB;
+    tempF = Head;
+    for (int i = 0; i < Count; i++) {
+        tempB = tempF;
+        tempF = tempF->Next;
+        delete tempB;
+    }
 }
 
 void stackList::AddLast(int Item) {

@@ -1,0 +1,45 @@
+공부내용 로그화 시작
+
+OCI Instance : Ubuntu AMD 제작 및 테스팅 :
+    ssh connection - vim coding으로 넘어가야할 가능성도 존재
+    x server : xclock, vscode - vscode의 필요자원이 너무 많음. arm instace가 풀리고 난 후에 다시 시도
+    vscode-server - 아직 자세한 사용법은 공부중
+
+OCI Instance ARM 티케팅 스크립트 :
+    하루이틀에 끝날 수준이 아님을 알게 됨
+    AMD Instance를 따로 하나 만들어서 스크립트를 돌리도록 제작
+
+UAMD (Ubuntu AMD instance) : 
+    nvim coding을 위한 세팅 설정 :
+        zsh + oh my zsh :
+            typewritten
+            zsh-autosuggestions
+            thefuck
+        nvim install : 왜 안되지? 왜? 아니 왜? 와이?
+            :set number
+            :set relativenumber
+            :set autoindent
+            :set tabstop=4
+            :set shiftwidth=4
+            :set smarttab
+            :set softtabstop=4
+            :set mouse=a
+
+            call plug#begin()
+
+            Plug 'https://github.com/tpope/vim-surround.git' " surround
+            Plug 'https://github.com/preservim/nerdtree.git' " nerdtree
+            Plug 'https://github.com/tpope/vim-commentary.git' " commentary : gcc & gc
+            Plug 'https://github.com/vim-airline/vim-airline.git' " status bar
+            "Plug 'https://github.com/lifepillar/pgsql.vim.git' " PSQL pluging needs : SQLSetType pgsql.vim
+            Plug 'https://github.com/ap/vim-css-color.git' " preview css color
+            Plug 'https://github.com/rafi/awesome-vim-colorschemes.git' " retro scheme
+            Plug 'https://github.com/neoclide/coc.nvim.git' " auto completion
+            Plug 'https://github.com/ryanoasis/vim-devicons.git' " dev icons
+            Plug 'https://github.com/tc50cal/vim-terminal.git' " vim terminal
+            Plug 'https://github.com/preservim/tagbar.git' " tagbar
+            Plug 'https://github.com/terryma/vim-multiple-cursors.git' " CTRL + N for multiple cursors
+            "Plug 'https://github.com/sheerun/vim-polyglot.git' " CTRL + N for multiple cursors
+
+            call plug#end()
+

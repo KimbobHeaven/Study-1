@@ -54,3 +54,5 @@ void BST::Print(Nptr T, int Lvl = 0) {
         Print(T->LChild, Lvl + 1);
     }
 }
+
+test

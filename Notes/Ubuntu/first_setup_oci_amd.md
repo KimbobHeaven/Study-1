@@ -14,12 +14,12 @@ sudo apt update && upgrade
 
 install git
 ```
-sudo install git
+sudo apt install git
 ```
 
 install vim
 ```
-sudo install vim
+sudo apt install vim
 ```
 
 # 2. ZSH

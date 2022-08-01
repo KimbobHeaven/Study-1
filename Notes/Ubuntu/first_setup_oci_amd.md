@@ -14,12 +14,12 @@ sudo apt update && upgrade
 
 install git
 ```
-sudo install git
+sudo apt install git
 ```
 
 install vim
 ```
-sudo install vim
+sudo apt install vim
 ```
 
 # 2. ZSH
@@ -67,7 +67,7 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 
 install npm & node.js
 ```
-nvm install lts
+nvm install --lts
 ```
 
 install typewritten  

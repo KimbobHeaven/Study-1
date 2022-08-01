@@ -20,8 +20,9 @@ class BST {
     Nptr Insert(Nptr T, int Key);
     Nptr Delete(Nptr T, int Key);
 
-    void Traverse();
+    void Traverse(Nptr T);
+    void Print(Nptr T, int Lvl = 0);
 
     private:
-    Nptr Head;
-}
+    Nptr Leaf;
+};

@@ -1,0 +1,3 @@
+/home/ubuntu/documents/Study/Univ_Lectures/data_structure_C++/tree/binary_search_tree/build/CMakeFiles/_build_exe.dir
+/home/ubuntu/documents/Study/Univ_Lectures/data_structure_C++/tree/binary_search_tree/build/CMakeFiles/edit_cache.dir
+/home/ubuntu/documents/Study/Univ_Lectures/data_structure_C++/tree/binary_search_tree/build/CMakeFiles/rebuild_cache.dir

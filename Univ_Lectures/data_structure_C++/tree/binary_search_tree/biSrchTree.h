@@ -15,13 +15,22 @@ class BST {
     BST();
     BST(const BST& B);
     ~BST();
-    
-    Nptr Search(Nptr T, int Key);
-    Nptr Insert(Nptr T, int Key);
-    Nptr Delete(Nptr T, int Key);
 
-    void Traverse(Nptr T);
-    void Print(Nptr T, int Lvl = 0);
+    Nptr Copy(Nptr T);
+    void Destroy(Nptr T);
+    
+    Nptr Search(int Key);
+    Nptr Search(Nptr T, int Key);
+
+    Nptr Insert(int Key);
+    Nptr Insert(Nptr T, int Key);
+
+    void Delete(int Key);
+    void Delete(Nptr T, int Key);
+    void SuccessorCopy(Nptr& T, dataType& DelNodeData);
+
+    void Print();
+    void Print(Nptr T, int Lvl, bool R);
 
     private:
     Nptr Leaf;

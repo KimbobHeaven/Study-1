@@ -9,7 +9,7 @@ Reference : [javascript.info](javascript.info "javascript.info")
 서버에서도 실행가능  
 자바스크립트 엔진이 들어있는 모든 디바이스에서도 동작  
 브라우저에는 자바스크립트 가상 머신이라는 엔진이 내장  
-  * V8(Chrome, Opera), SpiderMonkey(Firefox), IE(Microsoft Edge, Safari) 등등
+    * V8(Chrome, Opera), SpiderMonkey(Firefox), IE(Microsoft Edge, Safari) 등등  
     작동과정 : 스크립트 읽기(파싱) -> 기계어 전환(컴파일) -> 코드실행  
     
 > 브라우저에서 할 수 있는 일 :

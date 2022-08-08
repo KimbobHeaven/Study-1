@@ -87,10 +87,13 @@ Reference : [javascript.info](javascript.info "javascript.info")
 * 모던 마크업  
     * type속성 : <script type=...>  
         * 이젠 타입명시가 필수가 아니고, 속성의 의미가 바뀜  
+
     language속성 : <script language=...>  
         * 현재 사용중인 스크립트 언어를 나타냄. 의미가 퇴화  
+
     스크립트 전후 주석  
         * <script>를 태그처리 할 수 있으므로, 요즘은 사용하지 않음  
+        
 
 # 3. Code Quality
 # 4. Objects: The Basics

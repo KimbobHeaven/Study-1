@@ -89,9 +89,19 @@ Reference : [javascript.info](javascript.info "javascript.info")
         * 이젠 타입명시가 필수가 아니고, 속성의 의미가 바뀜  
     * language속성 : <script language=...>  
         * 현재 사용중인 스크립트 언어를 나타냄. 의미가 퇴화  
-
     * 스크립트 전후 주석  
         * <script>를 태그처리 할 수 있으므로, 요즘은 사용하지 않음  
+
+* 외부 스크립트  
+src 속성을 사용하여 HTML에 삽입
+```html
+<script src="/path/to/script.js"></script>
+```
+
+URL전체를 속성으로 사용가능
+```html
+<script src="https://example.com/example.js"></script>
+```
 
 
 # 3. Code Quality

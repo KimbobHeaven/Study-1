@@ -4,6 +4,7 @@ Reference : [javascript.info](javascript.info "javascript.info")
 
 # 1. An Introduction
 ## 1.1. 
+```
 자바스크립트 : 웹페이지에 생동감을 붙여넣기 위해 만들어진 프로그래밍 언어  
     작성한 프로그램 : 스크립트, HTML 안에 작성 가능, 특별한 컴파일 없이 문자형태로 작성 가능
     서버에서도 실행가능  
@@ -34,6 +35,7 @@ Reference : [javascript.info](javascript.info "javascript.info")
     TypeScript : strict data typing에 집중, Microsoft에서 개발
     Flow : TypeScript와 다른 방식의 자료형 강제, Facebook이 개발
     Dart : 브라우저가 아닌 환경에서 동작하는 고유의 엔진을 가진 독자적 언어, Googl이 개발
+```
 
 ## 1.2.
 명세서

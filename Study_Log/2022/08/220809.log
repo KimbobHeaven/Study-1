@@ -1,2 +1,5 @@
 xforwarding : slow speed?
 gui : vnc, xrdp, rdp
+
+rdp is faster than vnc (compressed)
+xrdp is rdp using vnc...?

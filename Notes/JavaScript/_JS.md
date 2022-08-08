@@ -62,7 +62,7 @@ Reference : [javascript.info](javascript.info "javascript.info")
 ## 1.4.
 * Chrome :  
     * F12  
-    * ex : bug.html:12  
+    ex : bug.html:12  
         * bug.html : 에러가 난 파일  
         :12 : 에러가 난 라인  
 

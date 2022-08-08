@@ -98,18 +98,18 @@ src 속성을 사용하여 HTML에 삽입
 <script src="/path/to/script.js"></script>
 ```
 
-URL전체를 속성으로 사용가능
+* URL전체를 속성으로 사용가능
 ```html
 <script src="https://example.com/example.js"></script>
 ```
 
-복수의 스크립트 삽입
+* 복수의 스크립트 삽입
 ```html
 <script src="/example1.js"></script>
 <script src="/example2.js"></script>
 ```
 
-주의 :  
+* 주의 :  
     * src 속성이 있으면 태그 내부의 코드는 무시  
     HTML 안에 직접 스크립트 코드를 작성하는 방식은 코드가 간단할때만 사용
 

@@ -113,6 +113,9 @@ src 속성을 사용하여 HTML에 삽입
     * src 속성이 있으면 태그 내부의 코드는 무시  
     HTML 안에 직접 스크립트 코드를 작성하는 방식은 코드가 간단할때만 사용
 
+## 2.2.
+
+
 # 3. Code Quality
 # 4. Objects: The Basics
 # 5. Data Types

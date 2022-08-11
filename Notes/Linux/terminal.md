@@ -1,5 +1,8 @@
 Terminal Commands
 ===
+references  
+[kinsta.com](https://kinsta.com/blog/linux-commands/ "https://kinsta.com/blog/linux-commands/")  
+[ubuntu.com](https://ubuntu.com/tutorials/command-line-for-beginners#8-hidden-files "https://ubuntu.com/tutorials/command-line-for-beginners#8-hidden-files")  
 
 # 1. Directory n Files
 ## pwd  

@@ -27,15 +27,21 @@ study
 ## Data Structure
 study
 
+# C#
+study
+
+# JavaScript
+study
+
 # Linux
-terminal  
+terminal : kinda done 
 
 ## Vim bindings
 [doc](https://vim.rtorr.com/) : postpone  
 [youtube](https://www.youtube.com/watch?v=RZ4p-saaQkc&ab_channel=freeCodeCamp.org) : ing  
 
 
-# Ubuntu
+## Ubuntu
 ~~setup note~~   
 light booting  
 ~~backup and restore~~  

@@ -114,6 +114,106 @@ src 속성을 사용하여 HTML에 삽입
     HTML 안에 직접 스크립트 코드를 작성하는 방식은 코드가 간단할때만 사용
 
 ## 2.2.
+* 암시적 세미콜론, 세미콜론 자동 삽입을 지원하지만 가능하면 C처럼 줄마다 세미콜론
+* no error
+```js
+alert('Hello')
+alert('World')
+```
+* error
+```js
+alert("error")
+[1, 2].forEach(alert)
+```
+
+* 주석  
+```js
+// single line
+
+/*
+multiple lines
+*/
+```
+
+## 2.3.
+* "use strict" or 'use strict'
+    * ES5에서 기존 기능을 변경한 효과가 활성화되게 함  
+    클래스나 모듈에 기본탑재 되어있어 둘 다 안쓰는 경우에만 사용해도 됨
+
+## 2.4.
+* 변수 : let 으로 정의  
+```js
+let message;
+message = 'Hello';
+
+let message2 = 'world';
+let message3 = 'yo', message4 = 'yoyo';  // 가능은 하지만 권장하지는 않음
+
+var old = 'old';  // 오래된 방식으로 오래된 스크립트에서 보이기도 함
+
+let message = 'yoyoyo';  // 에러 : 선언을 두번이상 할경우 에러발생
+```
+
+* 변수명
+```js
+let abc123;  // 문자, 숫자
+let $, _;  // 기호 $ _ 까지만 사용가능
+let 1abc;  // 숫자로는 시작 불가
+```
+
+* 상수
+```js
+const myBirthday = '41.13.5213';  // let 대신 const 사용
+const COLOR_RED = '#F00';  // 대문자 상수는 대문자와 밑줄로 구성
+```
+
+## 2.5.
+* 동적 타입 : 변수의 타입을 언제든지 바꿀 수 있음  
+
+* 숫자형 : 정수, 부동소수점 숫자, 특수 숫자 값
+```js
+// 특수 숫자 값들
+alert(1 / 0);  // Infinity
+alert(Infinity);  // also Infinity
+alert("text" / 2);  // NaN, Not a Number : 부정확하거나 정의되지 않은 수학연산결과
+```
+
+* BigInt : 길이 상관없이 정수를 나타냄
+```js
+const bigInt = 1234567890n;  // 끝에 n을 붙임
+```
+
+* 문자형
+```js
+let str = "Hello";  // " "
+let str2 = 'World';  // ' '
+let phrase = `text and embed ${str}`;  // ` ` 엠베드를 포함가능
+```
+
+* Boolean형
+```js
+let amIHungry = true;
+let yo = false;
+```
+
+* null : 별도의 자료형  
+    * 타 언어의 null과 성격이 다름
+    값이 비어있다, 알 수 없다, 존재하지 않는다 를 나타내는데에 사용
+```js
+let age = null;
+```
+
+```js
+어차피 웹사이트에 있는 내용을 토대로 공부를 하는거고
+사실상 내용 복붙이랑 큰 차이가 없는데
+텍스트로 정리할 이유가 있나..?
+
+그냥 ./codes/_notes/ 에 코드화 해서 정리해놓고
+정확하거나 자세한게 궁금하면 레퍼런스로 찾아가거나 검색하는 방식으로 전환하는게 어떤지 고민중
+```
+
+
+
 
 
 # 3. Code Quality

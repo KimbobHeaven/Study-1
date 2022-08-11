@@ -1,4 +1,8 @@
 # MY ASS IS ON FIRE
+javascript
+c#
+c++
+
 how network works  
 ports  
 portforwarding  
@@ -55,6 +59,9 @@ CMakeList.txt check build exe file name
 
 # React
 yeah...
+
+# Docker
+study
 
 # Markdown files
 ~~basics~~  

@@ -1,5 +1,0 @@
-자료구조 : linked list
-    Nptr Head;  // node* 이기 때문에 node가 아닌 단순한 node로의 주소값만을 가지는 포인터를 정의
-    Nptr Head 대신에 node Head 를 사용하여 Head->Next가 첫번째 node이도록 세팅?
-    일단 학교에서 배운대로는 했는데 추가로 하나 만들어보긴 해야곘다
-    위키가면 리스트 종류로 뭐 나와있으려나

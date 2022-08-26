@@ -1,0 +1,37 @@
+types : $ man sys_types.h
+Additionally:
+    *  mode_t shall be an integer type.
+    *  dev_t shall be an integer type.
+    *  nlink_t, uid_t, gid_t, and id_t shall be integer types.
+    *  blkcnt_t and off_t shall be signed integer types.
+    *  fsblkcnt_t, fsfilcnt_t, and ino_t shall be defined as unsigned integer types.
+    *  size_t shall be an unsigned integer type.
+    *  blksize_t, pid_t, and ssize_t shall be signed integer types.
+    *  clock_t  shall  be  an  integer  or real-floating type.  
+    *  time_t shall be an integer type.
+
+mode_t : unsigned int 중 16bit 사용
+    4bits : 파일종류
+    4 * 3bits : 특수권한, 유저권한, 그룹권한, 나머지권한
+
+size_t : unsigned int, sizeof() 함수의 반환값으로 사용
+
+ssize_t : signed size type, int형, IO함수의 반환값으로 사용
+
+off_t : long형 정수...?
+
+uid_t, gid_t : int형
+
+time_t : int형
+
+pid_t : signed int형
+
+clock_t : int or real-floating type
+
+idypte_t : 아마 int형
+
+id_t : int형
+
+sighandler_t : 시그널 핸들러 함수 -ish
+    typedef void (*__sighandler_t)(int);
+    typedef __sighandler_t sighandler_t;

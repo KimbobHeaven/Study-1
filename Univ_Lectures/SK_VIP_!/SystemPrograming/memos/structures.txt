@@ -1,0 +1,336 @@
+DIR : Opaque Data Type, (def from minGW)
+typedef struct 
+{
+	struct _finddata_t	dd_dta; /* disk transfer area for this dir */
+	struct dirent		dd_dir;
+	intptr_t		dd_handle;  /* _findnext handle */
+	/*
+	 * Status of search:
+	 *   0 = not started yet (next entry to read is first entry)
+	 *  -1 = off the end
+	 *   positive = 0 based index of next entry
+	 */
+	int			dd_stat;
+	char			dd_name[1];
+} DIR;
+
+FILE : (def from minGW)
+typedef struct _iobuf
+{
+    char*   _ptr;
+    int     _cnt;
+    char*   _base;
+    int     _flag;
+    int     _file;
+    int     _charbuf;
+    int     _bufsiz;
+    char*   _tmpfname;
+} FILE;
+
+dirent : <sys/dirent.h> , $ man readdir
+struct dirent {
+    ino_t          d_ino;       /* Inode number */
+    off_t          d_off;       /* Not an offset; see below */
+    unsigned short d_reclen;    /* Length of this record */
+    unsigned char  d_type;      /* Type of file; not supported by all filesystem types */
+    char           d_name[256]; /* Null-terminated filename */
+};
+
+stat : <sys/stat.h> , $ man -s 2 stat
+struct stat {
+    dev_t     st_dev;         /* ID of device containing file */
+    ino_t     st_ino;         /* Inode number */
+    mode_t    st_mode;        /* File type and mode */
+    nlink_t   st_nlink;       /* Number of hard links */
+    uid_t     st_uid;         /* User ID of owner */
+    gid_t     st_gid;         /* Group ID of owner */
+    dev_t     st_rdev;        /* Device ID (if special file) */
+    off_t     st_size;        /* Total size, in bytes */
+    blksize_t st_blksize;     /* Block size for filesystem I/O */
+    blkcnt_t  st_blocks;      /* Number of 512B blocks allocated */
+
+    struct timespec st_atim;  /* Time of last access */
+    struct timespec st_mtim;  /* Time of last modification */
+    struct timespec st_ctim;  /* Time of last status change */
+
+    #define st_atime st_atim.tv_sec      /* Backward compatibility */
+    #define st_mtime st_mtim.tv_sec
+    #define st_ctime st_ctim.tv_sec
+};
+
+struct timespec {
+    __kernel _time_t tv_sec;  /* seconds */
+    long             tv_nsec;  /* nanoseconds */
+};
+
+utsname : <sys/utsname.h> , $ man -s 2 uname
+struct utsname {
+    char sysname[];    /* Operating system name (e.g., "Linux") */
+    char nodename[];   /* Name within "some implementation-defined network" */
+    char release[];    /* Operating system release (e.g., "2.6.28") */
+    char version[];    /* Operating system version */
+    char machine[];    /* Hardware identifier */
+};
+
+passwd : <pwd.h> , $ man getpwuid
+struct passwd {
+    char   *pw_name;       /* username */
+    char   *pw_passwd;     /* user password */
+    uid_t   pw_uid;        /* user ID */
+    gid_t   pw_gid;        /* group ID */
+    char   *pw_gecos;      /* user information */
+    char   *pw_dir;        /* home directory */
+    char   *pw_shell;      /* shell program */
+};
+
+spwd : <shadow.h> , $ man getspnam
+struct spwd {
+    char *sp_namp;     /* Login name */
+    char *sp_pwdp;     /* Encrypted password */
+    long  sp_lstchg;   /* Date of last change (measured in days since 1970-01-01 00:00:00 +0000 (UTC)) */
+    long  sp_min;      /* Min # of days between changes */
+    long  sp_max;      /* Max # of days between changes */
+    long  sp_warn;     /* # of days before password expires to warn user to change it */
+    long  sp_inact;    /* # of days after password expires until account is disabled */
+    long  sp_expire;   /* Date when account expires (measured in days since 1970-01-01 00:00:00 +0000 (UTC)) */
+    unsigned long sp_flag;  /* Reserved */
+};
+
+group : <grp.h> , $ man getgrnam
+struct group {
+    char   *gr_name;        /* group name */
+    char   *gr_passwd;      /* group password */
+    gid_t   gr_gid;         /* group ID */
+    char  **gr_mem;         /* NULL-terminated array of pointers to names of group members */
+};
+
+utmp : <utmp.h> , $ man utmp
+struct utmp {
+    short   ut_type;              /* Type of record */
+    pid_t   ut_pid;               /* PID of login process */
+    char    ut_line[UT_LINESIZE]; /* Device name of tty - "/dev/" */
+    char    ut_id[4];             /* Terminal name suffix, or inittab(5) ID */
+    char    ut_user[UT_NAMESIZE]; /* Username */
+    char    ut_host[UT_HOSTSIZE]; /* Hostname for remote login, or kernel version for run-level messages */
+    struct  exit_status ut_exit;  /* Exit status of a process marked as DEAD_PROCESS;
+    long   ut_session;           /* Session ID */
+    struct timeval ut_tv;        /* Time entry was made */
+    int32_t ut_addr_v6[4];        /* Internet address of remote host; IPv4 address uses just ut_addr_v6[0] */
+    char __unused[20];            /* Reserved for future use */
+};
+
+struct exit_status {
+    short e_termination;
+    short e_exit;
+}
+
+struct timeval {
+    long tv_sec;
+    long tv_usec;
+}
+
+struct timezone {
+    int tz_minuteswest;
+    int tz_dsttime;
+}
+
+tm : <time.h> , $ man gmtime
+struct tm {
+    int tm_sec;    /* Seconds (0-60) */
+    int tm_min;    /* Minutes (0-59) */
+    int tm_hour;   /* Hours (0-23) */
+    int tm_mday;   /* Day of the month (1-31) */
+    int tm_mon;    /* Month (0-11) */
+    int tm_year;   /* Year - 1900 */
+    int tm_wday;   /* Day of the week (0-6, Sunday = 0) */
+    int tm_yday;   /* Day in the year (0-365, 1 Jan = 0) */
+    int tm_isdst;  /* Daylight saving time */
+};
+
+sysinfo : $ man sysinfo
+struct sysinfo {
+    long uptime;             /* Seconds since boot */
+    unsigned long loads[3];  /* 1, 5, and 15 minute load averages */
+    unsigned long totalram;  /* Total usable main memory size */
+    unsigned long freeram;   /* Available memory size */
+    unsigned long sharedram; /* Amount of shared memory */
+    unsigned long bufferram; /* Memory used by buffers */
+    unsigned long totalswap; /* Total swap space size */
+    unsigned long freeswap;  /* Swap space still available */
+    unsigned short procs;    /* Number of current processes */
+    unsigned long totalhigh; /* Total high memory size */
+    unsigned long freehigh;  /* Available high memory size */
+    unsigned int mem_unit;   /* Memory unit size in bytes */
+    char _f[20-2*sizeof(long)-sizeof(int)];  /* Padding to 64 bytes */
+};
+
+tms : <sys/times.h> , $ man -s 2 times
+struct tms {
+    clock_t tms_utime;  /* user time */
+    clock_t tms_stime;  /* system time */
+    clock_t tms_cutime; /* user time of children */
+    clock_t tms_cstime; /* system time of children */
+};
+
+siginfo_t : <sys/siginfo.h> , $ man sigaction , p.343..?
+siginfo_t {
+    int      si_signo;     /* Signal number */
+    int      si_errno;     /* An errno value */
+    int      si_code;      /* Signal code */
+    union {
+        int      si_trapno;    /* Trap number that caused hardware-generated signal (unused on most architectures) */
+        pid_t    si_pid;       /* Sending process ID */
+        uid_t    si_uid;       /* Real user ID of sending process */
+        int      si_status;    /* Exit value or signal */
+        clock_t  si_utime;     /* User time consumed */
+        clock_t  si_stime;     /* System time consumed */
+        sigval_t si_value;     /* Signal value */
+        int      si_int;       /* POSIX.1b signal */
+        void    *si_ptr;       /* POSIX.1b signal */
+        int      si_overrun;   /* Timer overrun count; POSIX.1b timers */
+        int      si_timerid;   /* Timer ID; POSIX.1b timers */
+        void    *si_addr;      /* Memory location which caused fault */
+        long     si_band;      /* Band event (was int in glibc 2.3.2 and earlier) */
+        int      si_fd;        /* File descriptor */
+        short    si_addr_lsb;  /* Least significant bit of address (since Linux 2.6.32) */
+        void    *si_lower;     /* Lower bound when address violation occurred (since Linux 3.19) */
+        void    *si_upper;     /* Upper bound when address violation occurred (since Linux 3.19) */
+        int      si_pkey;      /* Protection key on PTE that caused fault (since Linux 4.6) */
+        void    *si_call_addr; /* Address of system call instruction (since Linux 3.5) */
+        int      si_syscall;   /* Number of attempted system call (since Linux 3.5) */
+        unsigned int si_arch;  /* Architecture of attempted system call (since Linux 3.5) */
+    }
+}
+
+sigset_t : p.332
+typedef struct {
+    unsigned long __val[_NSIG_WORDS];
+} sigset_t;
+
+sigaction : $ man sigaction
+struct sigaction {
+    void     (*sa_handler)(int);
+    void     (*sa_sigaction)(int, siginfo_t *, void *);
+    sigset_t   sa_mask;
+    int        sa_flags;
+    void     (*sa_restorer)(void);
+};
+// in some systems
+struct sigaction {
+    int sa_flags;
+    union {
+        void (*sa_handler)();
+        void (*sa_sigaction)(int, siginfo_t *, void *);
+    } _funcptr;
+    sigset_t sa_mask;
+};
+
+itimerval : <sys/time.h> , $ man getitimer
+itimerval {
+    struct timeval it_interval;
+    struct timeval it_value;
+};
+
+ipc_perm : <sys/ipc.h> , $ man msgctl
+struct ipc_perm {
+    key_t          __key;       /* Key supplied to msgget(2) */
+    uid_t          uid;         /* Effective UID of owner */
+    gid_t          gid;         /* Effective GID of owner */
+    uid_t          cuid;        /* Effective UID of creator */
+    gid_t          cgid;        /* Effective GID of creator */
+    unsigned short mode;        /* Permissions */
+    unsigned short __seq;       /* Sequence number */
+};
+
+msqid_ds : $ man msgctl
+struct msqid_ds {
+    struct ipc_perm msg_perm;     /* Ownership and permissions */
+    time_t          msg_stime;    /* Time of last msgsnd(2) */
+    time_t          msg_rtime;    /* Time of last msgrcv(2) */
+    time_t          msg_ctime;    /* Time of last change */
+    unsigned long   __msg_cbytes; /* Current number of bytes in queue (nonstandard) */
+    msgqnum_t       msg_qnum;     /* Current number of messages in queue */
+    msglen_t        msg_qbytes;   /* Maximum number of bytes allowed in queue */
+    pid_t           msg_lspid;    /* PID of last msgsnd(2) */
+    pid_t           msg_lrpid;    /* PID of last msgrcv(2) */
+};
+
+msgbuf : <sys/msg.h> , $ man msgsnd
+struct msgbuf {
+    long mtype;       /* message type, must be > 0 */
+    char mtext[1];    /* message data */
+};
+
+msginfo : $ man msgctl , IPC_INFO
+struct msginfo {
+    int msgpool; /* Size in kibibytes of buffer pool used to hold message data; unused within kernel */
+    int msgmap;  /* Maximum number of entries in message map; unused within kernel */
+    int msgmax;  /* Maximum number of bytes that can be written in a single message */
+    int msgmnb;  /* Maximum number of bytes that can be written to queue; used to initialize msg_qbytes during queue creation (msgget(2)) */
+    int msgmni;  /* Maximum number of message queues */
+    int msgssz;  /* Message segment size; unused within kernel */
+    int msgtql;  /* Maximum number of messages on all queues in system; unused within kernel */
+    unsigned short int msgseg;  /* Maximum number of segments; unused within kernel */
+};
+
+shmid_ds : <sys/shm.h> , $ man shmctl
+struct shmid_ds {
+    struct ipc_perm shm_perm;    /* Ownership and permissions */
+    size_t          shm_segsz;   /* Size of segment (bytes) */
+    time_t          shm_atime;   /* Last attach time */
+    time_t          shm_dtime;   /* Last detach time */
+    time_t          shm_ctime;   /* Last change time */
+    pid_t           shm_cpid;    /* PID of creator */
+    pid_t           shm_lpid;    /* PID of last shmat(2)/shmdt(2) */
+    shmatt_t        shm_nattch;  /* No. of current attaches */
+    ...
+};
+
+shminfo : $ man shmctl , IPC_INFO
+struct shminfo {
+    unsigned long shmmax; /* Maximum segment size */
+    unsigned long shmmin; /* Minimum segment size; always 1 */
+    unsigned long shmmni; /* Maximum number of segments */
+    unsigned long shmseg; /* Maximum number of segments that a process can attach; unused within kernel */
+    unsigned long shmall; /* Maximum number of pages of shared memory, system-wide */
+};
+
+shm_info : $ man shmctl , SHM_INFO
+struct shm_info {
+    int           used_ids; /* # of currently existing segments */
+    unsigned long shm_tot;  /* Total number of shared memory pages */
+    unsigned long shm_rss;  /* # of resident shared memory pages */
+    unsigned long shm_swp;  /* # of swapped shared memory pages */
+    unsigned long swap_attempts;  /* Unused since Linux 2.4 */
+    unsigned long swap_successes;  /* Unused since Linux 2.4 */
+};
+
+semid_ds : <sys/sem.h> , $ man semctl
+struct semid_ds {
+    struct ipc_perm sem_perm;  /* Ownership and permissions */
+    time_t          sem_otime; /* Last semop time */
+    time_t          sem_ctime; /* Last change time */
+    unsigned long   sem_nsems; /* No. of semaphores in set */
+};
+
+seminfo : $ man semctl , IPC_INFO
+struct  seminfo {
+    int semmap;  /* Number of entries in semaphore map; unused within kernel */
+    int semmni;  /* Maximum number of semaphore sets */
+    int semmns;  /* Maximum number of semaphores in all semaphore sets */
+    int semmnu;  /* System-wide maximum number of undo structures; unused within kernel */
+    int semmsl;  /* Maximum number of semaphores in a set */
+    int semopm;  /* Maximum number of operations for semop(2) */
+    int semume;  /* Maximum number of undo entries per process; unused within kernel */
+    int semusz;  /* Size of struct sem_undo */
+    int semvmx;  /* Maximum semaphore value */
+    int semaem;  /* Max. value that can be recorded for semaphore adjustment (SEM_UNDO) */
+};
+
+semun : senctl fourth arg
+union semun {
+    int              val;    /* Value for SETVAL */
+    struct semid_ds *buf;    /* Buffer for IPC_STAT, IPC_SET */
+    unsigned short  *array;  /* Array for GETALL, SETALL */
+    struct seminfo  *__buf;  /* Buffer for IPC_INFO (Linux-specific) */
+};

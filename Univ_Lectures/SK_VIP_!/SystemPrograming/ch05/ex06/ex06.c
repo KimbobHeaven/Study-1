@@ -34,6 +34,6 @@ int main(int argc, char *argv[]) {
     }
 
     if (option % 2) {
-        printf("")
+        printf("");
     }
 }

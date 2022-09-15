@@ -8,7 +8,7 @@ $ sudo cp /opt/google/chrome-remote-desktop/chrome-remote-desktop /opt/google/ch
 $ echo $DISPLAY
 $ sudo vim /opt/google/chrome-remote-desktop/chrome-remote-desktop
 
-FIRST_X_DISPLAY_NUMBER = 0
+FIRST_X_DISPLAY_NUMBER = <$DISPLAY>
 
 @staticmethod
 def get_unused_display_number():

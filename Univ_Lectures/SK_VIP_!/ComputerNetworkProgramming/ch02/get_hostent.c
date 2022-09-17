@@ -35,7 +35,6 @@ int main(int argc, char *argv[]) {
         printf("IP address(%dth) : %s\n", i + 1, buf);
     }
 
-    printf("%s\n", hp->h_aliases[0]);
     for (i = 0; hp->h_aliases[i]; i++)
         printf("host aliases(%dth) : %s", i + 1, hp->h_aliases[i]);
     puts("");

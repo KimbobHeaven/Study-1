@@ -59,3 +59,14 @@ user_name@Device_name:/$ sudo tar cvpzf /media/user_name/Label/backup_$(date +%y
 ```console
 user_name@Device_name:~$ sudo tar xvpzf /dir_of_backupfile/backup.tar.gz -C /
 ```
+
+```console
+# on ubuntu try
+
+$ sudo add-apt-repository ppa:yannubuntu/boot-repair && sudo apt update
+$ sudo apt install -y boot-repair && boot-repair
+
+$ cd <devkimbob's />
+$ blkid
+$ sudo vi ./etc/fstab
+```

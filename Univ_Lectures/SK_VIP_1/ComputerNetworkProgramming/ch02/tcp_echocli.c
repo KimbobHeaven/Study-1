@@ -14,7 +14,7 @@ int main(int argc, char *argv[]) {
     int s, nbyte;
     char buf[MAXLINE + 1];
 
-    if (argc != 2) {
+    if (argc != 3) {
         printf("error : arg");
         exit(1);
     }
@@ -27,7 +27,7 @@ int main(int argc, char *argv[]) {
     bzero((char *)&servaddr, sizeof(servaddr));  // servaddr '\0'
     servaddr.sin_family = AF_INET;
     inet_pton(AF_INET, argv[1], &servaddr.sin_addr);
-    servaddr.sin_port = htons(7);
+    servaddr.sin_port = htons(atoi(argv[2]));
 
     if (connect(s, (struct sockaddr *)&servaddr, sizeof(servaddr)) < 0) {
         perror("connect fail");

@@ -8,15 +8,20 @@
 
 #define MSG "Test Message"
 
-int main() {
+int main(int argc, char *argv[]) {
     int sd1, sd2;
     int addrlen;
     struct sockaddr_in servaddr, cliaddr;
     unsigned short port1, port2;
 
+    if (argc < 2) {
+        printf("error : arg\n");
+        exit(1);
+    }
+
     servaddr.sin_family = AF_INET;
     servaddr.sin_addr.s_addr = htonl(INADDR_ANY);
-    servaddr.sin_port = htons(7);
+    servaddr.sin_port = htons(atoi(argv[1]));
 
     sd1 = socket(PF_INET, SOCK_STREAM, 0);
     sd2 = socket(PF_INET, SOCK_DGRAM, 0);

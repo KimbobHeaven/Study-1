@@ -1,0 +1,15 @@
+/home/ubuntu/documents/github/Study/Univ_Lectures/C#/ch01/01/bin/Debug/net6.0/01
+/home/ubuntu/documents/github/Study/Univ_Lectures/C#/ch01/01/bin/Debug/net6.0/01.deps.json
+/home/ubuntu/documents/github/Study/Univ_Lectures/C#/ch01/01/bin/Debug/net6.0/01.runtimeconfig.json
+/home/ubuntu/documents/github/Study/Univ_Lectures/C#/ch01/01/bin/Debug/net6.0/01.dll
+/home/ubuntu/documents/github/Study/Univ_Lectures/C#/ch01/01/bin/Debug/net6.0/01.pdb
+/home/ubuntu/documents/github/Study/Univ_Lectures/C#/ch01/01/obj/Debug/net6.0/01.csproj.AssemblyReference.cache
+/home/ubuntu/documents/github/Study/Univ_Lectures/C#/ch01/01/obj/Debug/net6.0/01.GeneratedMSBuildEditorConfig.editorconfig
+/home/ubuntu/documents/github/Study/Univ_Lectures/C#/ch01/01/obj/Debug/net6.0/01.AssemblyInfoInputs.cache
+/home/ubuntu/documents/github/Study/Univ_Lectures/C#/ch01/01/obj/Debug/net6.0/01.AssemblyInfo.cs
+/home/ubuntu/documents/github/Study/Univ_Lectures/C#/ch01/01/obj/Debug/net6.0/01.csproj.CoreCompileInputs.cache
+/home/ubuntu/documents/github/Study/Univ_Lectures/C#/ch01/01/obj/Debug/net6.0/01.dll
+/home/ubuntu/documents/github/Study/Univ_Lectures/C#/ch01/01/obj/Debug/net6.0/refint/01.dll
+/home/ubuntu/documents/github/Study/Univ_Lectures/C#/ch01/01/obj/Debug/net6.0/01.pdb
+/home/ubuntu/documents/github/Study/Univ_Lectures/C#/ch01/01/obj/Debug/net6.0/01.genruntimeconfig.cache
+/home/ubuntu/documents/github/Study/Univ_Lectures/C#/ch01/01/obj/Debug/net6.0/ref/01.dll

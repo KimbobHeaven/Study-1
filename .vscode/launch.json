@@ -10,7 +10,6 @@
             "request": "launch",
             "program": "${fileDirname}/${fileBasenameNoExtension}",
             "args": [
-                "ubuntu"
             ],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",

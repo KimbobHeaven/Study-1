@@ -70,3 +70,8 @@ $ cd <devkimbob's />
 $ blkid
 $ sudo vi ./etc/fstab
 ```
+
+# 4. Additional : HDD ownership
+```console
+$ sudo chown user_name:user_name .
+```

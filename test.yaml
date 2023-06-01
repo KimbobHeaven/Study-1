@@ -1,0 +1,28 @@
+# Deployment.yaml
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: deploy-tls-server
+  labels:
+    app: deploy-tls-server
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: deploy-tls-server
+  template:
+    metadata:
+      labels:
+        app: deploy-tls-server
+    spec:
+      containers:
+      - name: cont-tls-server
+        image: devkimbob/tls_server:v3
+        ports:
+        - containerPort: 9800
+        resources:
+          requests:
+            cpu: 5m
+          limits:
+            cpu: 10m
